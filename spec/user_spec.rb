@@ -8,4 +8,9 @@ describe "User" do
     expect(user).not_to have_bike
   end
 
+  it "can rent a bike" do
+    user.rent!
+    expect(user).to have_bike
+  end
+
 end
