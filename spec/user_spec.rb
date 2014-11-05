@@ -13,4 +13,9 @@ describe "User" do
     expect(user).to have_bike
   end
 
+  it "can return bike" do
+    user.return!
+    expect(user).not_to have_bike
+  end
+
 end
