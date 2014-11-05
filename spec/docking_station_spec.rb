@@ -2,10 +2,10 @@ require 'docking_station'
 
 describe Docking_Station do
   
-  let (:docking_station) {Docking_Station.new}
+  let (:docking_station) {Docking_Station.new(capacity: 10)}
 
   it "should allow to set default capacity on initialisatoin" do
-    
+    expect(docking_station.capacity).to eq(10)
   end
 
   it "will be able to rent a bike" do
@@ -39,5 +39,5 @@ describe Docking_Station do
   it "should display how many bikes are avaliable to rent" do
 
   end
-  
+
 end
