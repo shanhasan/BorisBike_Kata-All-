@@ -8,4 +8,8 @@ describe Bike do
     expect(bike.broken?).not_to be true
   end
 
+  it "can break" do
+    expect(bike.break!).to be true
+  end
+
 end
