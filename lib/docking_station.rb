@@ -1,7 +1,11 @@
 class Docking_Station
 
   def empty?
-    true
+    true  
+  end
+
+  def dock!
+    
   end
 
 end
